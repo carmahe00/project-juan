@@ -1,0 +1,90 @@
+@import "../styles/variables.scss";
+
+/* MENU */
+.wrapper {
+    
+    z-index: 2;
+    flex: 1;
+    align-self: flex-start;
+
+    height: 116.21px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    box-shadow: 0 0.75rem 0.5rem -0.5rem rgba(0, 0, 0, 0.2);
+
+    //40em == 640px
+    @media only screen and (max-width: 40em) {
+        position: fixed;
+        z-index: 2;
+        width: 1440px;
+        top: 0;
+    }
+    &__logo {
+        position: absolute;
+        width: 166px;
+        height: 116.21px;
+        left: 46px;
+        top: 7.97px;
+    }
+
+    &__list {
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        position: fixed;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: blur(2px);
+        transform: translate(0);
+        transition: 0.3s ease transform;
+        @include lg {
+            display: flex;
+            flex-direction: row;
+            
+
+            padding: 13px;
+            position: absolute;
+            width: 531px;
+            height: 51px;
+            left: 764px;
+            top: 42.45px;
+            border: 1px solid $black;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            @include lg {
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 0;
+                margin-right: calc(0.5rem + 16px);
+            }
+            li {
+                text-decoration: none;
+                color: $black;
+                padding: 0.75rem 1.25rem;
+                border-radius: 12px;
+            }
+        }
+    }
+    &__search__icon {
+        position: absolute;
+        width: 22.64px;
+        height: 25.12px;
+        left: 1338px;
+        top: 56.26px;
+    }
+}

@@ -1,0 +1,25 @@
+.secondary {
+    width: 1440px;
+    height: 1239px;
+    left: 0px;
+    top: 821px;
+
+    background: #dbdee1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 79px;
+}
+
+.title {
+    width: 411px;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    height: 10px;
+
+    color: #3e3a39;
+}

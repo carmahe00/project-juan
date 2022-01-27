@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    width: 1200;
+    height: 600px;
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &__rectangle {
+        position: absolute;
+        width: 1440px;
+        height: 461px;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            linear-gradient(360deg, #000000 -5.48%, rgba(0, 0, 0, 0) 81.27%);
+    }
+
+    &__bottom {
+        
+        width: 1440px;
+        height: 106px;
+        left: 0px;
+        top: 600px;
+        display: flex;
+        flex-direction: row;
+        background: #00205b;
+        justify-content: space-around;
+        align-items: center;
+        
+        &__indicador {
+            width: 192px;
+            top: 50%
+        }
+        &__rectangle {
+            
+            width: 200px;
+            height: 39px;
+            left: 1150px;
+            
+
+            background: #ffffff;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+    }
+}
